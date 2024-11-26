@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BluOS Viewer</title>
+<script src="bluos.js"></script>
+<link rel="stylesheet" href="bluos.css">
+</head>
+
+<body onload="startup()">
+
+<div id="background"></div>
+
+<div id="container">
+	<div id="leftSide">
+		<div id="artwork"></div>
+		<div id="controlsBar">
+			<div class="button" id="playButton" onClick="play()"></div>
+			<div class="button" id="pauseButton" onClick="pause()"></div>
+			<div class="button" id="backButton" onClick="skipBack()"></div>
+			<div class="button" id="forwardButton" onClick="skipForward()"></div>
+			<div class="button" id="clearPlaylistButton" onClick="clearPlaylist()"></div>
+			<div class="button" id="playerIPAddressButton" onClick="checkForPlayerIPAddress(true)"></div>
+		</div>
+	</div>
+	<div id="rightSide">
+		<div id="iconBar">
+			<div class="icon" id="serviceIcon"></div>
+			<div class="icon" id="qualityIcon"></div>
+			<div id="playingIcon"></div>
+			<div id="trackTime"></div>
+		</div>
+		<div id="trackInfo"></div>
+		<div id="playlist"></div>
+	</div>
+</div>
+
+<div id="bottomBar">
+</div>
+
+</body>
+</html>
